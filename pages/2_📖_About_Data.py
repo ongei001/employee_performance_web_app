@@ -35,3 +35,13 @@ st.markdown("""* **Columns:** The data has 29 columns
 * **Missing Values:** There are no missing values            
             
             """)
+
+#Hiding the Streamlit rerun menu from the user
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
