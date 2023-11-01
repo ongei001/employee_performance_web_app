@@ -12,13 +12,12 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.set_page_config(page_title="Predictions", page_icon="🧠")
 
-st.markdown("# Machine Learning 🧠")
+st.title("Employee Performance App")
 st.sidebar.success("Make Predictions")
 
 data = pd.read_csv("Employee_performance.csv")
 
 #Machine Learning
-st.header('Machine Learning')
 #importing all required libraries for machine learning modeling
 from sklearn.preprocessing import LabelEncoder, StandardScaler,OrdinalEncoder
 from sklearn.model_selection import train_test_split
