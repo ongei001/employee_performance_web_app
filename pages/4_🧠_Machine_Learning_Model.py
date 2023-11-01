@@ -90,9 +90,14 @@ st.dataframe(pred1)
 
 # making predictions and print them 
 prediction = rf.predict(pred1)
-st.subheader('The Prediction')
-st.write('Employee rating: 1-Low  2-Good  3-Excellent  4-Outstanding')
-st.write(f'The Employee rating is: {prediction}')
+if prediction[0]==1:
+    st.text('The Employee is a LOW performer')
+if prediction[0]==2:
+    st.text('The Employee is a GOOD performer')
+if prediction[0]==3:
+    st.text('The Employee is an EXCELLENT performer')
+else:
+    st.text('The Employee is an OUTSTANDING performer')
 
 #Hiding the Streamlit rerun menu from the user
 hide_streamlit_style = """
