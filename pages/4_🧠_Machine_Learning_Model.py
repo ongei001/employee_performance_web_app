@@ -68,9 +68,10 @@ with col1:
     EmpJobRole = st.selectbox('Employee Role:Business Analyst-0 Data Scientist-1 Delivery Manager-2  Developer-3 Finance Manager-4 Healthcare Representative-5 Human Resources-6 Laboratory Technician-7 Manager-8 Manager R&D-9 Manufacturing Director-10 Research Director-11 Research Scientist-12 Sales Executive-13 Sales Representative-14 Senior Developer-15 Senior Manager R&D-16  Technical Architect-17 Technical Lead-18',(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18))
     DistanceFromHome=st.number_input('Distance from home in miles')
     EmpEnvironmentSatisfaction = st.selectbox('Environment Satisfaction: 1-Low, 2-Medium, 3-High, 4-Very High',(1,2,3,4))
+        
+with col2:
     EmpHourlyRate=st.number_input('Hourly Rate in Dollars')
     EmpLastSalaryHikePercent=st.number_input('Salary Hike Percentage')
-with col2:
     TotalWorkExperienceInYears=st.number_input('Work Experience')
     EmpWorkLifeBalance = st.selectbox('Work-Life Balance: 1-Low, 2-Medium, 3-High, 4-Very High',(1,2,3,4))
     ExperienceYearsAtThisCompany=st.number_input('Experience in this Company: Years')
