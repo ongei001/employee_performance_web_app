@@ -263,3 +263,13 @@ st.markdown('''
             Therefore the company should take not of this and avoid using so much funds training employees up to 6 times. The funds should be channelled 
             to training employees who had zero(0) training times to improve their performance
 ''')
+
+#Hiding the Streamlit rerun menu from the user
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
