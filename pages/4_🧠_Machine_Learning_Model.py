@@ -61,7 +61,7 @@ st.write(f'The model Accuracy is : {accur}%')
 
 # get user input
 st.subheader('User Inputs')
-col1,col2=st.columns()
+col1,col2=st.columns(2)
 with col1:
     Age=st.number_input('Employee age')
     EmpDepartment = st.selectbox('Employee Department: Data Science-0  Development-1  Finance-2  Human Resources-3  Research & Development-4  Sales-5',('0','1','2','3','4','5'))
