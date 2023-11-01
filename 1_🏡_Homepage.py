@@ -39,9 +39,12 @@ data if provided it can provide approximate or exact values. In this machine lea
 forecasting. Therefore, this will help Mr. Brain take the right course of action.
 """
 )
+#Hiding the Streamlit rerun menu from the user
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
 
-
-
-
-
-
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
