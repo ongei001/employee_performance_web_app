@@ -55,9 +55,9 @@ with st.spinner('Finding a match...'):
    # st.balloons()
 
 # print model accuracy
-st.subheader('Model Accuracy')
-accur = (rf.score(X,y)*100).round(2)
-st.write(f'The model Accuracy is : {accur}%')
+#st.subheader('Model Accuracy')
+#accur = (rf.score(X,y)*100).round(2)
+#st.write(f'The model Accuracy is : {accur}%')
 
 # get user input
 st.subheader('User Inputs')
